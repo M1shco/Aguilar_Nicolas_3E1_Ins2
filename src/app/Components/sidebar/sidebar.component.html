@@ -1,16 +1,16 @@
-<button (click)="setVisibilityMenu()">Menu</button>
+
 <div class="sidemenu-container"
 [style.backgroundColor]="theme"
 [style.width]="widthMenu+'%'"
 >
 <!-- [style.display]="visibleMenu ? 'flex': 'none'" -->
-
+<button (click)="setVisibilityMenu()"(click)="setVisibilityMenuu()" [style.display]="visibleMenuu ? 'flex': 'none'" style="border: none;background-color: transparent;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png" width="40px" height="40px"></button>
 <div class="container-support" [style.display]="visibleMenu ? 'flex': 'none'">
   
   <div class="item">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVPONUAIhhAs_-3pp6iP_OsgzkZ4mtYxNqUQ&s" alt="a" height="50px" width="55px" style="border-radius: 50%;">
     <p class="user">{{userName}}</p>
-    <button (click)="setVisibilityMenu()" class="botonOjo"> <img src="https://static.thenounproject.com/png/1069529-200.png" width="30px" height="30px"></button>
+    <button (click)="setVisibilityMenu()" (click)="setVisibilityMenuu()"class="botonOjo"> <img src="https://static.thenounproject.com/png/1069529-200.png" width="30px" height="30px"></button>
   </div>
 
 
